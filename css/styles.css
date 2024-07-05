@@ -1,0 +1,57 @@
+/* General styles for the content section */
+.content {
+    background-color: #f0f0f0; /* Example background color */
+    padding: 20px;
+    height: 1000px; /* Ensures content is tall enough to require scrolling */
+}
+
+/* Navbar styles */
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    float: left;
+}
+
+.navbar-toggle {
+    float: right;
+}
+
+@media (max-width: 767px) {
+    /* Mobile dropdown menu styles */
+    .navbar-collapse {
+        background-color: #f8f8f8; /* Example background color for mobile dropdown */
+        width: 100%;
+    }
+    .nav > li {
+        width: 100%;
+    }
+}
+
+/* Center the page heading */
+h1.text-center {
+    text-align: center;
+}
+
+/* Ensure the navbar collapses properly on smaller screens */
+.navbar-collapse.collapse {
+    display: none!important;
+}
+
+.navbar-collapse.collapse.in {
+    display: block!important;
+}
+
+.navbar-header .navbar-toggle {
+    display: block; /* Ensure the toggle button is visible on mobile */
+}
+
+@media (min-width: 768px) {
+    .navbar-collapse.collapse {
+        display: block!important;
+        height: auto!important;
+        padding-bottom: 0;
+        overflow: visible!important;
+    }
+}
